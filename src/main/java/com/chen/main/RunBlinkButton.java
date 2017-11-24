@@ -21,7 +21,7 @@ import com.chen.layout.SGLayout;
  * @ClassName:  BlinkButtonTest
  * @Author  haichen
  */
-public class BlinkButtonTest extends JFrame {
+public class RunBlinkButton extends JFrame {
 
     private static final String SWING_TIMER_BLINK_BUTTON = "Swing Timer";
     private static final String SWING_WORKER_BLINK_BUTTON = "Swing Worker";
@@ -44,7 +44,7 @@ public class BlinkButtonTest extends JFrame {
     private static JPanel blinkButtonPanel = new JPanel();
     private static JPanel otherButtonPanel = new JPanel();
 
-    public BlinkButtonTest() {
+    public RunBlinkButton() {
         System.out.println(""+System.getProperty("user.dir"));
         this.getContentPane().add(contentPanel);
         SGLayout blinkLayout = new SGLayout(1, 4, 4, 4, 10, 10);
@@ -79,7 +79,7 @@ public class BlinkButtonTest extends JFrame {
     }
 
     public static void main(String[] args) {
-        BlinkButtonTest test = new BlinkButtonTest();
+        RunBlinkButton test = new RunBlinkButton();
     }
 
     static class BlinkListener implements ActionListener {

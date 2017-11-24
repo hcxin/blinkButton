@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.chen</groupId>
-  <artifactId>blinkbutton</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>blinkButton</artifactId>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
-  <name>blinkbutton</name>
+  <name>blinkButton</name>
   <url>http://maven.apache.org</url>
 
   <properties>
