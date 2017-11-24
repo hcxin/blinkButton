@@ -77,8 +77,8 @@ public class SGLayout implements LayoutManager, java.io.Serializable
      * <p>
      * horizontal and vertical gaps are set to 0 and
      * X- and Y-alignments are set to FILL.
-     * @param     rows   the rows.
-     * @param     cols   the columns.
+     * @param     row   the rows.
+     * @param     col   the columns.
      */
     public SGLayout(int row, int col)
     {
@@ -91,10 +91,10 @@ public class SGLayout implements LayoutManager, java.io.Serializable
      * <p>
      * horizontal and vertical gaps are set to 0 and
      * X- and Y-alignments are set to FILL.
-     * @param     rows   the rows.
-     * @param     cols   the columns.
-     * @param     hgap   the horizontal gap, in pixels.
-     * @param     vgap   the vertical gap, in pixels.
+     * @param     row   the rows.
+     * @param     col   the columns.
+     * @param     hGap   the horizontal gap, in pixels.
+     * @param     vGap   the vertical gap, in pixels.
      */
     public SGLayout(int row, int col, int hGap, int vGap)
     {
@@ -107,12 +107,12 @@ public class SGLayout implements LayoutManager, java.io.Serializable
      * <p>
      * horizontal and vertical gaps are set to 0 and
      * X- and Y-alignments are set to FILL.
-     * @param     rows   the rows.
-     * @param     cols   the columns.
-     * @param     hAlignment the X-alignment.
-     * @param     vAlignment the Y-alignment.
-     * @param     hgap   the horizontal gap, in pixels.
-     * @param     vgap   the vertical gap, in pixels.
+     * @param     row   the rows.
+     * @param     col   the columns.
+     * @param     halignment the X-alignment.
+     * @param     valignment the Y-alignment.
+     * @param     hGap   the horizontal gap, in pixels.
+     * @param     vGap   the vertical gap, in pixels.
      */
     public SGLayout(int row, int col, int halignment, int valignment, int hGap, int vGap)
     {
@@ -153,8 +153,8 @@ public class SGLayout implements LayoutManager, java.io.Serializable
     /**
      * Set up scale values and alignments for the whole layout.
      * <p>
-     * @param     rows   the rows.
-     * @param     cols   the columns.
+     * @param     row   the rows.
+     * @param     col   the columns.
      */
     private void setDimensions(int row, int col)
     {
@@ -290,7 +290,7 @@ public class SGLayout implements LayoutManager, java.io.Serializable
      * The preferred height is the sum of the the largest heights of
      * the rows, which is the largest preferred height in each row.
      *
-     * @param     target   the container in which to do the layout.
+     * @param     parent   the container in which to do the layout.
      * @return    the preferred dimensions to lay out the
      *                      subcomponents of the specified container.
      * @concurrency
@@ -359,7 +359,7 @@ public class SGLayout implements LayoutManager, java.io.Serializable
      * The preferred height is the sum of the the largest heights of
      * the rows, which is the largest minimum height in each row.
      *
-     * @param     target   the container in which to do the layout.
+     * @param     parent   the container in which to do the layout.
      * @return    the preferred dimensions to lay out the
      *                      subcomponents of the specified container.
      * @concurrency

@@ -16,9 +16,9 @@ import com.chen.component.MyPanel;
 import com.chen.layout.SGLayout;
 
 /**
- *  类的功能描述：
+ *  类的功能描述：程序入口
  *
- * @ClassName:  BlinkButtonTest
+ * @ClassName:  RunBlinkButton
  * @Author  haichen
  */
 public class RunBlinkButton extends JFrame {
