@@ -15,6 +15,12 @@ import com.chen.blinkbutton.BlinkButtonByUtilTimer;
 import com.chen.component.MyPanel;
 import com.chen.layout.SGLayout;
 
+/**
+ *  类的功能描述：
+ *
+ * @ClassName:  BlinkButtonTest
+ * @Author  haichen
+ */
 public class BlinkButtonTest extends JFrame {
 
     private static final String SWING_TIMER_BLINK_BUTTON = "Swing Timer";
