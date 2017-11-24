@@ -12,7 +12,7 @@ import com.chen.blinkbutton.BlinkButtonBySwingTimer;
 import com.chen.blinkbutton.BlinkButtonBySwingWorker;
 import com.chen.blinkbutton.BlinkButtonByTread;
 import com.chen.blinkbutton.BlinkButtonByUtilTimer;
-import com.chen.component.MyPanel;
+import com.chen.component.BlinkPanel;
 import com.chen.layout.SGLayout;
 
 /**
@@ -40,7 +40,7 @@ public class RunBlinkButton extends JFrame {
     private static JButton startButton = new JButton(START_BUTTON_STR);
     private static JButton stopButton = new JButton(STOP_BUTTON_STR);
     private static JButton exitButton = new JButton(EXIT_BUTTON_STR);
-    private static JPanel contentPanel = new MyPanel();
+    private static JPanel contentPanel = new BlinkPanel();
     private static JPanel blinkButtonPanel = new JPanel();
     private static JPanel otherButtonPanel = new JPanel();
 
