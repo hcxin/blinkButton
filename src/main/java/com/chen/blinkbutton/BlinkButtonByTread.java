@@ -17,19 +17,19 @@ public class BlinkButtonByTread extends JButton {
 	private static final long serialVersionUID = 1L;
 	Timer timer;
     boolean finish = false;
-    private long delay_ = 0;
-    private Color background_ = null;
-    private Color originalBackground_ = null;
+    private long delay = 0;
+    private Color background = null;
+    private Color originalBackground = null;
     int i = 0;
-    private JButton button_ = null;
+    private JButton button = null;
     Thread t;
 
     public BlinkButtonByTread(String txt, long delay, Color background) {
-        button_ = this;
-        delay_ = delay;
-        background_ = background;
+        button = this;
+        this.delay = delay;
+        this.background = background;
         this.setText(txt);
-        originalBackground_ = this.getBackground();
+        originalBackground = this.getBackground();
         blinkThread thread = new blinkThread();
         t = new Thread(thread);
         t.start();
@@ -43,15 +43,15 @@ public class BlinkButtonByTread extends JButton {
     }
 
     private synchronized void blinkWork() {
-        while (button_.isEnabled() && !finish) {
+        while (button.isEnabled() && !finish) {
             i++;
             if (i % 2 == 0) {
-                button_.setBackground(background_);
+                button.setBackground(background);
             } else {
-                button_.setBackground(originalBackground_);
+                button.setBackground(originalBackground);
             }
             try {
-                Thread.sleep(delay_);
+                Thread.sleep(delay);
             } catch (InterruptedException e) {
             }
         }

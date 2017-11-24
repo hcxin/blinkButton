@@ -6,9 +6,7 @@
 package com.chen.blinkbutton;
 
 import java.awt.Color;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import javax.swing.JButton;
 import javax.swing.SwingWorker;
@@ -16,19 +14,19 @@ import javax.swing.SwingWorker;
 public class BlinkButtonBySwingWorker extends JButton {
 
     boolean finish = false;
-    private long delay_ = 0;
-    private Color background_ = null;
-    private Color originalBackground_ = null;
+    private long delay = 0;
+    private Color background = null;
+    private Color originalBackground = null;
     int i = 0;
-    private JButton button_ = null;
+    private JButton button = null;
     MySwingWorker worker;
 
     public BlinkButtonBySwingWorker(String txt, long delay, Color background) {
-        button_ = this;
-        delay_ = delay;
-        background_ = background;
+        button = this;
+        this.delay = delay;
+        this.background = background;
         this.setText(txt);
-        originalBackground_ = this.getBackground();
+        originalBackground = this.getBackground();
         worker = new MySwingWorker();// java version>=1.6
         worker.execute();
         System.out.println(" end ");
@@ -44,7 +42,7 @@ public class BlinkButtonBySwingWorker extends JButton {
                 publish(n);
                 
                 try {
-                    Thread.sleep(delay_);
+                    Thread.sleep(delay);
                 } catch (InterruptedException e) {
 
                 }
@@ -58,11 +56,11 @@ public class BlinkButtonBySwingWorker extends JButton {
         @Override
         protected void process(List<Integer> list) {
             for (int n : list) {
-                if (button_.isEnabled() && !isFinish()) {
+                if (button.isEnabled() && !isFinish()) {
                     if (n % 2 == 0) {
-                        button_.setBackground(background_);
+                        button.setBackground(background);
                     } else {
-                        button_.setBackground(originalBackground_);
+                        button.setBackground(originalBackground);
                     }
                 }
             }

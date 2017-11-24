@@ -17,17 +17,17 @@ public class BlinkButtonBySwingTimer extends JButton {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private BlinkTask task_ = null;
-    private long delay_ = 0;
-    private Color background_ = null;
+	private BlinkTask task = null;
+    private long delay = 0;
+    private Color background = null;
     int i = 0;
     Timer timer;
 
     public BlinkButtonBySwingTimer(String txt, long delay, Color background) {
-        delay_ = delay;
-        background_ = background;
+        this.delay = delay;
+        this.background = background;
         this.setText(txt);
-        task_ = new BlinkTask(this, delay_, background_, this.getBackground());
+        task = new BlinkTask(this, this.delay, this.background, this.getBackground());
     }
 
     class BlinkTask {
