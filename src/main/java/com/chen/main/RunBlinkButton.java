@@ -20,6 +20,7 @@ import com.chen.layout.SGLayout;
  *
  * @ClassName: RunBlinkButton
  * @Author haichen
+ * @QQ 953899919
  */
 public class RunBlinkButton extends JFrame {
 
