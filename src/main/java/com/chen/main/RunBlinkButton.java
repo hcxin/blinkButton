@@ -16,10 +16,10 @@ import com.chen.component.BlinkPanel;
 import com.chen.layout.SGLayout;
 
 /**
- *  类的功能描述：程序入口
+ * 类的功能描述：程序入口
  *
- * @ClassName:  RunBlinkButton
- * @Author  haichen
+ * @ClassName: RunBlinkButton
+ * @Author haichen
  */
 public class RunBlinkButton extends JFrame {
 
@@ -31,11 +31,11 @@ public class RunBlinkButton extends JFrame {
     private static final String STOP_BUTTON_STR = "Stop";
     private static final String EXIT_BUTTON_STR = "Exit";
     private static BlinkButtonBySwingTimer swingTimerButton = new BlinkButtonBySwingTimer(SWING_TIMER_BLINK_BUTTON,
-        500, Color.red);
+            500, Color.red);
     private static BlinkButtonBySwingWorker swingWorkerButton = new BlinkButtonBySwingWorker(SWING_WORKER_BLINK_BUTTON,
-        500, Color.orange);
+            500, Color.orange);
     private static BlinkButtonByUtilTimer utilTimerButton = new BlinkButtonByUtilTimer(UTIL_TIMER_BLINK_BUTTON, 500,
-        Color.green);
+            Color.green);
     private static BlinkButtonByTread threadButton = new BlinkButtonByTread(THREAD_BLINK_BUTTON, 500, Color.blue);
     private static JButton startButton = new JButton(START_BUTTON_STR);
     private static JButton stopButton = new JButton(STOP_BUTTON_STR);
@@ -45,7 +45,7 @@ public class RunBlinkButton extends JFrame {
     private static JPanel otherButtonPanel = new JPanel();
 
     public RunBlinkButton() {
-        System.out.println(""+System.getProperty("user.dir"));
+        System.out.println("" + System.getProperty("user.dir"));
         this.getContentPane().add(contentPanel);
         SGLayout blinkLayout = new SGLayout(1, 4, 4, 4, 10, 10);
         blinkLayout.setMargins(15, 0, 20, 0);
