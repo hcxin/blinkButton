@@ -1,4 +1,4 @@
-### blinkButtonRepos
+### blinkButton
 
 Four ways to realize flashing button by java swing.
 
