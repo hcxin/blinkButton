@@ -8,4 +8,9 @@ You can run it as maven project,main class is RunBlinkButton.java.
 
 note:The swingWorker need java version >=1.6.
 
+### 有问题请联系我：
+
+
+![image](https://github.com/hcxin/baiyuSearch/blob/master/images/wx.jpg)
+
 
