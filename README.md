@@ -1,7 +1,7 @@
 # blinkButton
 ### Four ways to realize flashing button by java swing.
 
-### compatibility
+### compatibility：
 The swingWorker need java version >=1.6.
 
 ```java
