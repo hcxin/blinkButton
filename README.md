@@ -11,7 +11,7 @@ The swingWorker need java version >=1.6.
 
 3.util timer
 
-4.Thread.
+4.Thread
 
 ```
 
