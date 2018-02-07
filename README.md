@@ -1,5 +1,5 @@
 # blinkButton
-### Four ways to realize flashing button by java swing
+### Four different ways to realize flashing button by java swing
 
 ```java
 1.swing timer 
